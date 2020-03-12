@@ -1,0 +1,18 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "git:push": "git add . && git commit -m 'last' && git push origin master"
+  },
+  "author": "Rahman Qadirzade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.14.0",
+    "socket.io": "1.5.1",
+    "socket.io-emitter": "1.0.0",
+    "socket.io-redis": "1.1.1"
+  }
+}

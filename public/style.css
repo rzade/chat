@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #444;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background: brown;
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.headerin{
+    width: 20%;
+    float: left;
+    padding: 10px 20px;
+}
+.main{
+    width: 100%;
+    float: left;
+}
+.content{
+    width: 100%;
+    float: left;
+}
+.headertitle{
+    width: 100%;
+    float: left;
+    padding: 10px 20px;
+}
+.inputbox{
+    padding: 5px 0;
+    width: 100%;
+    float: left;
+}
+.join_room{
+    background: green;
+    padding: 5px 15px;
+}
+.inputbox label{
+    display: block;
+}
+.inputbox input{
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.inputbox select{
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.inputbox textarea{
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 60px;
+    resize: vertical;
+}
+.inputbox a{
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+.list{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.list li{
+    width: 100%;
+    float: left;
+    margin: 0 0 5px;
+}
+.list li a{
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 3px 0;
+}
+.list .me{
+    text-align: left;
+}
+.list .me a{
+    background: brown;
+}
+.list .other, .list .typing{
+    text-align: right;
+}
+.list .other a, .list .typing a{
+    background: green;
+}
+.list .info{
+    text-align: center;
+    background: #533030;
+}
+.messagebox{
+    background: green;
+    padding: 10px 20px;
+    width: 80%;
+}
+.send_message{
+    background: brown;
+    padding: 5px 15px;
+}
+
+@media only screen and (max-width: 1200px){
+    .headerin, .messagebox{
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <h1 class="headertitle">Chat</h1>
+    <div class="headerin">
+      <div class="inputbox">
+          <label>Adınız:</label>
+          <input type="text" id="name"/>
+      </div>
+      <div class="inputbox">
+        <label>Otaq:</label>
+        <select name="room" id="room">
+          <option value="1">Bir</option>
+          <option value="2">Iki</option>
+          <option value="3">Üç</option>
+          <option value="4">Dörd</option>
+          <option value="5">Beş</option>
+          <option value="6">Altı</option>
+          <option value="7">Yeddi</option>
+        </select>
+        <a id="join_room" class="join_room">Daxil ol</a>
+      </div>   
+    </div>  
+    <div class="inputbox messagebox">
+      <label>Mesajınız</label>
+      <textarea name="message" id="message"></textarea>
+      <a id="send_message" class="send_message">Send</a>
+    </div>
+  </header>
+  
+  <main class="main">
+    <section class="content"> 
+        <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/jquery.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
